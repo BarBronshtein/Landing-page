@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open-Sans-Regular';
+  color: $clr3;
+  background-color: $clr1;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway-Bold';
+}
+h5,
+h6 {
+  font-family: 'Open-Sans-Bold';
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  color: inherit;
+  border: none;
+  border-radius: 24px;
+  background: $clr2;
+}
+
+.underline {
+  height: 1px;
+  width: 100%;
+}

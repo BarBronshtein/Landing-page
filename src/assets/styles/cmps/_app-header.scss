@@ -1,0 +1,24 @@
+.app-header {
+  justify-content: space-between;
+  margin-top: 75px;
+  .main-nav {
+    font-family: 'Raleway-Regular';
+    * {
+      margin-inline-start: 60px;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .app-header {
+    margin-top: 25px;
+    .logo {
+      width: 80px;
+    }
+    .main-nav {
+      * {
+        font-size: rem(12px);
+        margin-inline-start: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+.home {
+  // Hero
+  .hero {
+    max-width: 720px;
+    margin: 0 auto 0;
+    margin-top: 90px;
+    text-align: center;
+    .img-container {
+      margin-bottom: 35px;
+    }
+    .info {
+      h2 {
+        margin-bottom: 40px;
+      }
+      p {
+        margin-bottom: 35px;
+      }
+      button {
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+        padding: 20px 95px;
+        border-radius: 28px;
+        font-family: 'Raleway-Bold';
+      }
+    }
+  }
+  // Image background
+  .img-background {
+    z-index: -5;
+    left: 0;
+    transform: translateY(-270px);
+    width: 100%;
+    height: 44%;
+  }
+  .background-color {
+    height: 222vh;
+    width: 100%;
+    left: 0;
+    z-index: -10;
+    transform: translateY(170px);
+    background-color: $clr4;
+  }
+  // About-us
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    width: fit-content;
+    margin: 170px auto 140px;
+    gap: 87px 150px;
+    > div {
+      max-width: 350px;
+    }
+    .item {
+      align-self: center;
+      justify-self: center;
+      .svg-container {
+        margin-bottom: 35px;
+      }
+      h4 {
+        font-size: rem(20px);
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: rem(14px);
+        line-height: 20px;
+      }
+    }
+  }
+  // More Info
+  .more-info {
+    display: flex;
+    width: 100%;
+    > * {
+      flex-basis: 50%;
+    }
+    .info {
+      margin-inline-start: 60px;
+      align-self: center;
+      h2 {
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      :first-of-type {
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 24px;
+      }
+      a {
+        color: $clr5;
+        display: inline-block;
+        .link-icon {
+          margin-inline-start: 8px;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          position: relative;
+          background-color: $clr5;
+          display: inline-block;
+        }
+        .icon {
+          position: absolute;
+          height: 4px;
+          width: 4px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .underline {
+        margin-top: -12px;
+        background: $clr5;
+      }
+    }
+  }
+  // Testimonials
+  .testimonials {
+    display: flex;
+    width: 85%;
+    margin: 180px auto 200px;
+    .pos-absolute {
+      z-index: -1;
+      left: 30px;
+      top: -35px;
+    }
+    .testimonial {
+      padding: 26px;
+      background: #202a3c;
+      border-radius: 4px;
+      margin-inline-start: 40px;
+      box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+
+      > p {
+        font-size: rem(14px);
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+        padding-top: 14px;
+      }
+      &-personnel {
+        display: flex;
+        .img-container img {
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-inline-end: 8px;
+        }
+        :last-child {
+          display: flex;
+          flex-direction: column;
+          :first-child {
+            margin-bottom: 4px;
+          }
+          p {
+            margin: 0;
+            letter-spacing: 0.5px;
+            font-size: rem(7px);
+            line-height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.info {
+  h2 {
+    font-size: rem(40px);
+  }
+  line-height: 60px;
+  p {
+    font-size: rem(20px);
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .home {
+    // Testimonials
+    .testimonials {
+      flex-direction: column;
+      margin: 180px auto 160px;
+      .pos-absolute {
+        left: 10px;
+        top: -50px;
+      }
+      .testimonial {
+        margin: 0 0 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .home {
+    // Background color
+    .background-color {
+      height: 400vh;
+    }
+    // About us
+    .about-us {
+      grid-template-columns: 1fr;
+    }
+    // More info
+    .more-info {
+      margin-top: 160px;
+      flex-direction: column;
+      :first-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
