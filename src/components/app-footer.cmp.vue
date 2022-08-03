@@ -4,13 +4,13 @@
         <div class="container flex">
             <div class="about-us">
                 <div class="details">
-                    <img src="src/assets/img/icon-location.svg" class="contact-icon  location">
+                    <!-- <img src="src/assets/img/icon-location.svg" class="contact-icon  location"> -->
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua</p>
                 </div>
                 <div class="details flex flex-column">
                     <div v-for="opt in options" :key="opt.icon">
-                        <img :src="opt.icon" class="contact-icon ">
+                        <!-- <img :src="opt.icon" class="contact-icon "> -->
                         <p class="text">{{ opt.info }}</p>
                     </div>
                 </div>

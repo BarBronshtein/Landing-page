@@ -2,7 +2,7 @@
     <section class="home">
         <!-- Hero -->
         <div class="hero flex flex-column pos-relative">
-            <div class="img-container"> <img src="src/assets/img/illustration-intro.png"></div>
+            <!-- <div class="img-container"> <img src="src/assets/img/illustration-intro.png"></div> -->
             <div class="info">
                 <h2>All your files in one secure location, accessible anywhere.</h2>
                 <p>Fylo stores all your most important files in one secure location. Access them wherever you need,
@@ -12,7 +12,7 @@
                 <button class="cta-btn" to="/">Get Started</button>
             </div>
         </div>
-        <img src="src/assets/img/bg-curvy-desktop.svg" class="pos-absolute img-background">
+        <!-- <img src="src/assets/img/bg-curvy-desktop.svg" class="pos-absolute img-background"> -->
         <div class="background-color pos-absolute"></div>
         <!-- About Us -->
         <div class="about-us">
@@ -26,7 +26,7 @@
         </div>
         <!-- More Info -->
         <div class="more-info full">
-            <div class="img-container"><img src="src/assets/img/illustration-stay-productive.png"></div>
+            <!-- <div class="img-container"><img src="src/assets/img/illustration-stay-productive.png"></div> -->
             <div class="info">
                 <h2>Stay productive,
                     wherever you are</h2>
@@ -54,7 +54,7 @@
         </div>
         <!-- Testimonials -->
         <div class="testimonials pos-relative full">
-            <img src="src/assets/img/bg-quotes.png" class="pos-absolute" />
+            <!-- <img src="src/assets/img/bg-quotes.png" class="pos-absolute" /> -->
             <div v-for="(testimonial, i) in testimonials" :key="testimonial.name" class="testimonial">
                 <p>{{ testimonial.info }}</p>
                 <div class="testimonial-personnel">
