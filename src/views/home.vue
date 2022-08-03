@@ -54,11 +54,11 @@
         </div>
         <!-- Testimonials -->
         <div class="testimonials pos-relative full">
-            <img :src="require('@/assets/img/bg-quotes.png')" class="pos-absolute" />
-            <div v-for="(testimonial, i) in testimonials" :key="testimonial.name" class="testimonial">
+            <img src="@/assets/img/bg-quotes.png" class="pos-absolute" />
+            <div v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial">
                 <p>{{ testimonial.info }}</p>
                 <div class="testimonial-personnel">
-                    <div class="img-container"><img :src="`/assets/img/profile-${i + 1}.jpg`" :alt="testimonial.name">
+                    <div class="img-container"><img :src="testimonial.src" :alt="testimonial.name">
                     </div>
                     <div>
                         <h6>{{ testimonial.name }}</h6>
@@ -72,6 +72,9 @@
 </template>
 
 <script>
+import photo1 from '@/assets/img/profile-1.jpg';
+import photo2 from '@/assets/img/profile-2.jpg';
+import photo3 from '@/assets/img/profile-3.jpg';
 import { itemsService } from '../services/items.js'
 export default {
     name: 'home',
@@ -79,9 +82,9 @@ export default {
         return {
             items: itemsService.getItems(),
             testimonials: [
-                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Satish Patel' },
-                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Bruce McKenzie' },
-                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Iva Boyd' }
+                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Satish Patel', src: photo1 },
+                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Bruce McKenzie', src: photo2 },
+                { info: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.', name: 'Iva Boyd', src: photo3 }
             ]
         }
     },
