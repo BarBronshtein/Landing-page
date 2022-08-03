@@ -2,7 +2,7 @@
     <section class="home">
         <!-- Hero -->
         <div class="hero flex flex-column pos-relative">
-            <!-- <div class="img-container"> <img src="src/assets/img/illustration-intro.png"></div> -->
+            <div class="img-container"> <img src="@/assets/img/illustration-intro.png"></div>
             <div class="info">
                 <h2>All your files in one secure location, accessible anywhere.</h2>
                 <p>Fylo stores all your most important files in one secure location. Access them wherever you need,
@@ -12,7 +12,7 @@
                 <button class="cta-btn" to="/">Get Started</button>
             </div>
         </div>
-        <!-- <img src="src/assets/img/bg-curvy-desktop.svg" class="pos-absolute img-background"> -->
+        <img src="@/assets/img/bg-curvy-desktop.svg" class="pos-absolute img-background">
         <div class="background-color pos-absolute"></div>
         <!-- About Us -->
         <div class="about-us">
@@ -54,12 +54,11 @@
         </div>
         <!-- Testimonials -->
         <div class="testimonials pos-relative full">
-            <!-- <img src="src/assets/img/bg-quotes.png" class="pos-absolute" /> -->
+            <img :src="require('@/assets/img/bg-quotes.png')" class="pos-absolute" />
             <div v-for="(testimonial, i) in testimonials" :key="testimonial.name" class="testimonial">
                 <p>{{ testimonial.info }}</p>
                 <div class="testimonial-personnel">
-                    <div class="img-container"><img :src="`src/assets/img/profile-${i + 1}.jpg`"
-                            :alt="testimonial.name">
+                    <div class="img-container"><img :src="`/assets/img/profile-${i + 1}.jpg`" :alt="testimonial.name">
                     </div>
                     <div>
                         <h6>{{ testimonial.name }}</h6>
